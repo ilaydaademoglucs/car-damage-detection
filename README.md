@@ -1,7 +1,7 @@
 # Car Damage Detection via Image Comparison
 Car Damage Detection is a full-stack application designed to compare two images of cars, detect damage, and highlight the damaged areas. It uses advanced machine learning models from Roboflow to process the images and provide visual feedback on potential damage.
 
-<img width="882" alt="Difference Image" src="https://github.com/user-attachments/assets/2b4dc013-2201-467d-8246-eefa7365c227" />
+<img width="875" alt="Pasted Graphic 2" src="https://github.com/user-attachments/assets/d1303930-2009-419b-b862-449a6aa989ee" />
 
 ## Features
 
