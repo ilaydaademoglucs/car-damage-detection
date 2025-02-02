@@ -1,8 +1,7 @@
 # Image Diff Check
+Image Diff Check is a full-stack application designed to compare two images of cars, detect damage, and highlight the damaged areas. It uses advanced machine learning models from Roboflow to process the images and provide visual feedback on potential damage.
 
 <img width="882" alt="Difference Image" src="https://github.com/user-attachments/assets/2b4dc013-2201-467d-8246-eefa7365c227" />
-
-Image Diff Check is a full-stack application designed to compare two images of cars, detect damage, and highlight the damaged areas. It uses advanced machine learning models from Roboflow to process the images and provide visual feedback on potential damage.
 
 ## Features
 
@@ -15,7 +14,7 @@ Image Diff Check is a full-stack application designed to compare two images of c
 
 The project is organized as a monorepo with separate frontend and backend directories:
 
-\`\`\`
+
 img-diff-check/
 ├── api/
 │   ├── main.py
@@ -30,7 +29,7 @@ img-diff-check/
 │   └── README.md
 ├── .gitignore
 └── README.md
-\`\`\`
+
 
 ## Technologies Used
 
@@ -47,17 +46,9 @@ img-diff-check/
 - HTML5
 - CSS3
 
-### Backend
-- FastAPI
-- OpenCV (cv2)
-- NumPy
-- Roboflow
-- Supervision
-
 ## Machine Learning Models
 
 This project utilizes two machine learning models from Roboflow:
-
 1. Car Parts Segmentation: [Car Parts Segmentation Model](https://universe.roboflow.com/segmentation-9q8ob/car-parts-llqro)
 2. Car Damage Detection: [Car Damage Detection Model](https://universe.roboflow.com/roboflow-universe-projects/car-damage-detection-ha5mm)
 
