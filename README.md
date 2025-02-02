@@ -9,27 +9,27 @@ Image Diff Check is a full-stack application designed to compare two images of c
 - Detect and highlight damaged areas on the cars
 - Provide damage confidence percentages for each image
 - Combine processed images for side-by-side comparison
-
+  
 ## Project Structure
 
 The project is organized as a monorepo with separate frontend and backend directories:
 
 
-img-diff-check/
-├── api/
-│   ├── main.py
-│   ├── poetry.lock
-│   ├── pyproject.toml
-│   ├── requirements.txt
-│   └── .env
-├── client/
-│   ├── public/
-│   ├── src/
-│   ├── package.json
-│   └── README.md
-├── .gitignore
-└── README.md
-
+    .
+    car-image-diff-check/
+    ├── ...
+    ├── api/                   
+    │   ├── main.py           
+    │   ├── poetry.lock           
+    │   ├── pyproject.toml        
+    │   ├── requirements.txt           
+    │   └── .env                
+    └── client/
+    │   │── public/             
+    │   ├── src/         
+    │   ├── README.md      
+    ├── .gitignore         
+    └── README.md           
 
 ## Technologies Used
 
@@ -57,28 +57,28 @@ This project utilizes two machine learning models from Roboflow:
 ### Backend
 
 1. Navigate to the backend directory:
-cd api
+```cd api```
 
 2. Install the required dependencies:
-pip install -r requirements.txt
+```poetry install```
 
 3. Create a `.env` file in the backend directory and add your Roboflow API key:
-API_KEY=your_roboflow_api_key_here
+```API_KEY=your_roboflow_api_key```
 
 4. Run the FastAPI server:
-poetry run uvicorn main:app --reload
+```poetry run uvicorn main:app --reload```
 
 
 ### Frontend
 
 1. Navigate to the frontend directory:
-cd client
+```cd client```
 
 2. Install the required dependencies:
-npm install
+```npm install```
 
 3. Start the development server:
-npm run serve
+```npm run serve```
 
 ## Usage
 
