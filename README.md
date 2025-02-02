@@ -99,17 +99,23 @@ Accepts two image files and returns a processed image with damaged areas highlig
 - Method: POST
 - Content-Type: multipart/form-data
 - Body:
-- file1: First image file
-- file2: Second image file
+- file1: (required) First image file (JPEG or PNG)
+- file2: (required) Second image file (JPEG or PNG)
 
 **Response:**
+- Status Code: 200 OK
 - Content-Type: image/png
 - Body: Combined processed image
 - Damaged-Parts: String containing damage confidence percentages for both images
+
+**Notes**
+Maximum file size: 10MB per image
+Supported image formats: JPEG, PNG
+Processing time may vary based on image size and complexity
 
 ## Acknowledgements
 
 - [Roboflow](https://roboflow.com/) for providing the machine learning models
 - [FastAPI](https://fastapi.tiangolo.com/) for the backend framework
-- [React](https://reactjs.org/) for the frontend library
+- [Vue.js](https://vuejs.org/) for the frontend library
 - [OpenCV](https://opencv.org/) for image processing capabilities
