@@ -1,5 +1,5 @@
-# Image Diff Check
-Image Diff Check is a full-stack application designed to compare two images of cars, detect damage, and highlight the damaged areas. It uses advanced machine learning models from Roboflow to process the images and provide visual feedback on potential damage.
+# Car Damage Segmentation / Difference Check
+Car Damage Segmentation / Difference Check is a full-stack application designed to compare two images of cars, detect damage, and highlight the damaged areas. It uses advanced machine learning models from Roboflow to process the images and provide visual feedback on potential damage.
 
 <img width="882" alt="Difference Image" src="https://github.com/user-attachments/assets/2b4dc013-2201-467d-8246-eefa7365c227" />
 
@@ -51,6 +51,30 @@ The project is organized as a monorepo with separate frontend and backend direct
 This project utilizes two machine learning models from Roboflow:
 1. Car Parts Segmentation: [Car Parts Segmentation Model](https://universe.roboflow.com/segmentation-9q8ob/car-parts-llqro)
 2. Car Damage Detection: [Car Damage Detection Model](https://universe.roboflow.com/roboflow-universe-projects/car-damage-detection-ha5mm)
+
+The main.py file implements a multi-step process to analyze car images for damage. The algorithm accepts two images of a car for comparison.
+
+Damage Detection:
+Both images are processed through the Car Damage Detection model.
+Areas of potential damage are identified and their coordinates extracted.
+
+Car Parts Segmentation:
+The images are then passed through the Car Parts Segmentation model.
+This step identifies and segments individual car parts in both images.
+
+Damage Localization:
+The algorithm correlates the detected damage areas with the segmented car parts for identifying
+which specific car parts are damaged.
+
+Comparison and Analysis:
+The results from both images are compared to identify any new or additional damage.
+Damage confidence percentages are calculated for each affected part.
+
+Results:
+The algorithm produces a detailed report of the damage assessment, including:
+Affected car parts
+Damage confidence percentages
+Visual representation of the damage
 
 ## Setup and Installation
 
